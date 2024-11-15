@@ -3,9 +3,10 @@
 const Header = () => {
   return (
     <header>
-      <h1>Мій додаток</h1>
+      <div className="logo">PIZZA DAY</div>
     </header>
   );
 };
 
 export default Header;
+

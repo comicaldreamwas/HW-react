@@ -1,9 +1,11 @@
+import PropTypes from 'prop-types';
 
 
-const Button = (props) => {
-  return (
-    <button {...props}>Надіслати</button>
-  );
-};
-
-export default Button;
+const Button = ({ children }) => {
+   return <button className="btn">{children}</button>;
+ };
+ Button.propTypes = {
+   children: PropTypes.node.isRequired,
+ };
+ 
+ export default Button;

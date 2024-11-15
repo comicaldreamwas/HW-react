@@ -1,9 +1,14 @@
+import PropTypes from 'prop-types';
 
+const Input = ({ placeholder }) => {
+   return (
+      
+    <input type="text" placeholder={placeholder} aria-label={placeholder} />
+   );
+ };
+ Input.propTypes = {
+   placeholder: PropTypes.node.isRequired,
+ };
+ 
+ export default Input;
 
-const Input = (props) => {
-  return (
-    <input type="text" placeholder="Введіть щось..." {...props} />
-  );
-};
-
-export default Input;
