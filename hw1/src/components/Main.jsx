@@ -1,17 +1,20 @@
-import Input from './Input';
-import Button from './Button';
+
+import pizzas from '../data';
+import './Menu.css';
+import PizzaItem from './PizzaItem';
 
 
-const Main = () => {
+const Menu = () => {
+  
   return (
-    <main>
-      <h1>The best pizza.</h1>
-      <p className="subtitle">Straight out of the oven, straight to you.</p>
-      <p className="welcome">👉 Welcome! Please start by telling us your name:</p>
-      <Input placeholder="Your full name" />
-      <Button>Start Order</Button>
-    </main>
+    <div className="menu">
+      <ul className="pizza-list">
+        {pizzas.map((pizza) => (
+          <PizzaItem key={pizza.id} pizza={pizza} />
+        ))}
+      </ul>
+    </div>
   );
 };
 
-export default Main;
+export default Menu;
