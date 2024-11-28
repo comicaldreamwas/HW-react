@@ -1,16 +1,13 @@
-import PropTypes from "prop-types";
+
+import './Button.css';
 
 const Button = ({ children, onClick }) => {
   return (
     <button className="btn" onClick={onClick}>
-      {children}
+      {children} Add to cart
     </button>
   );
 };
 
-Button.propTypes = {
-  children: PropTypes.node.isRequired,
-  onClick: PropTypes.func, 
-};
 
 export default Button;

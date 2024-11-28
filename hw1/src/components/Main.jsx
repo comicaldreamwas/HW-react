@@ -1,7 +1,7 @@
 
 import pizzas from '../data';
 import './Menu.css';
-import PizzaItem from './PizzaItem';
+import PizzaItem from './PizzaItem/PizzaItem';
 
 
 const Menu = () => {
