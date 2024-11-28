@@ -1,5 +1,4 @@
 import  { useState } from "react";
-
 import Button from '../Button/Button';
 import './PizzaItem.css';
 
@@ -36,7 +35,7 @@ const PizzaItem = ({ pizza }) => {
       </div>
       {counter === null ? (
         
-        <Button onClick={handleAddToCart}> Add to cart</Button>
+        <Button className="btn"   onClick={handleAddToCart}> Add to cart</Button>
       ) : (
        
         <div className="counter-container">
