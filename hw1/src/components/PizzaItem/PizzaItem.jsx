@@ -14,7 +14,7 @@ const PizzaItem = ({ pizza }) => {
 
  
   const handleDecrease = () => {
-    setCounter((prevCounter) => (prevCounter > 1 ? prevCounter - 1 : null)); // Повертає до кнопки, якщо значення <= 1
+    setCounter((prevCounter) => (prevCounter > 1 ? prevCounter - 1 : null)); 
   };
 
   
@@ -36,7 +36,7 @@ const PizzaItem = ({ pizza }) => {
       </div>
       {counter === null ? (
         
-        <Button onClick={handleAddToCart}></Button>
+        <Button onClick={handleAddToCart}> Add to cart</Button>
       ) : (
        
         <div className="counter-container">
